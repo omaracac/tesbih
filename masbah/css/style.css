@@ -1,0 +1,145 @@
+   body{
+        
+        background-color: #e3dede;
+        color: #07bea0;
+        font-family:Marhey ;
+    }
+    #zkr{
+     width:270px;
+     margin:  auto;
+     margin-top: 50px;
+     height: 270px;
+     border-radius: 50%;
+     transition: 1s;
+     position: relative;   
+     text-align: center;
+     font-size: 30px;
+     padding: 0 5px;
+      display: flex;
+     justify-content: center;
+     align-items: center; 
+     user-select: none;
+     color: #DEEFE7;
+     color: #108da3;
+
+     outline: 3px #455559 solid;
+    
+}
+#zkr:active {
+  transform: translate(0px,25px);
+  width: 250px;
+  height: 250px;
+}
+#add{
+  width: min-content;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  color: #108da3;
+
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+  border-bottom: 2px #0598b6 solid;
+}
+.form-select{
+  font-family: Marhey;
+    direction: rtl;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(199, 198, 196);
+    user-select: none;
+    padding: 7px  0   ;
+}
+#sel1{
+    font-size: 18px;
+    border-radius: 6px;
+    width: 250px;
+    outline: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding:   7px  0   ;
+    background: none;
+    color: #108da3;
+    background: none;
+    box-shadow: 1px 1px  5px 5px #455559;
+}
+#sel1 option{
+  color: #0b0003;
+  border-radius: 10px;
+  background-color: #e3dede;
+
+}
+option{
+  border-radius: 20px;
+}
+#reset{
+    width: 100px;
+    height: 100px;
+    color: #B57114;
+    margin: 30px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid   #B57114;
+    text-align: center;
+    align-items: center;
+}
+
+
+#sun , #night{
+  margin: 7px;
+  text-align: center;
+  margin: 0 ;
+  display: block;
+  font-size: 25px;
+}
+
+
+
+@media screen and  (max-width:676px) {
+    .form-select , #sel1 {
+        display: flex;
+        flex-direction: column;
+        padding:   7px  0   ;
+    }
+}
+
+
+body {
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.theme-toggle {
+ 
+  margin: 20px auto;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 26px;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-left: 20px;
+  /* box-shadow: 3px 5px 7px 2px #455559; */
+}
+
+.theme-toggle i {
+  position: absolute;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+}
+
+.theme-toggle .active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.theme-toggle .inactive {
+  transform: scale(0);
+}
